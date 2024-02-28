@@ -1,7 +1,14 @@
 ﻿module Program
 
+open System
 // For more information see https://aka.ms/fsharp-console-apps
-printfn "Hello from F#"
-let example = Examples.Example2.run()
-// write a function to add 1 to an interger number
+
+[<EntryPoint>]
+let main argv =
+    printfn "Hello World from F#!"
+    
+    printfn "Hello from F#"
+    Examples.Example1.run()
+    0 // return an integer exit code
+
 
